@@ -1,0 +1,57 @@
+@use "../../utils/variables" as *;
+
+.weather {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: $default_font_family;
+  background: $main_background;
+  .search_bar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 400px;
+    padding: 100px 20px;
+    background: rgb(2, 0, 36);
+    border-radius: 20px;
+    background-image: linear-gradient(
+      150deg,
+      hsl(240deg 100% 20%) 0%,
+      hsl(281deg 100% 21%) 19%,
+      hsl(304deg 100% 23%) 31%,
+      hsl(319deg 100% 30%) 40%,
+      hsl(329deg 100% 36%) 48%,
+      hsl(336deg 100% 41%) 55%,
+      hsl(346deg 83% 51%) 61%,
+      hsl(3deg 95% 61%) 68%,
+      hsl(17deg 100% 59%) 74%,
+      hsl(30deg 100% 55%) 80%,
+      hsl(40deg 100% 50%) 86%,
+      hsl(48deg 100% 50%) 93%,
+      hsl(55deg 100% 50%) 100%
+    );
+    input {
+      height: 50px;
+      border: none;
+      outline: none;
+      border-radius: 40px;
+      color: #626262;
+      background: #ebfffc;
+      font-size: 18px;
+      padding-left: 25px;
+    }
+    .search_icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid none;
+      border-radius: 50%;
+      background: #ebfffc;
+      padding: 15px;
+      cursor: pointer;
+    }
+  }
+}

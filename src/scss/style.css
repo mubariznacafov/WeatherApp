@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.weather {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
+  background: #e2d4ff;
+}
+.weather .search_bar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 400px;
+  padding: 100px 20px;
+  background: rgb(2, 0, 36);
+  border-radius: 20px;
+  background-image: linear-gradient(150deg, hsl(240, 100%, 20%) 0%, hsl(281, 100%, 21%) 19%, hsl(304, 100%, 23%) 31%, hsl(319, 100%, 30%) 40%, hsl(329, 100%, 36%) 48%, hsl(336, 100%, 41%) 55%, hsl(346, 83%, 51%) 61%, hsl(3, 95%, 61%) 68%, hsl(17, 100%, 59%) 74%, hsl(30, 100%, 55%) 80%, hsl(40, 100%, 50%) 86%, hsl(48, 100%, 50%) 93%, hsl(55, 100%, 50%) 100%);
+}
+.weather .search_bar input {
+  height: 50px;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  color: #626262;
+  background: #ebfffc;
+  font-size: 18px;
+  padding-left: 25px;
+}
+.weather .search_bar .search_icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid none;
+  border-radius: 50%;
+  background: #ebfffc;
+  padding: 15px;
+  cursor: pointer;
+}/*# sourceMappingURL=style.css.map */
