@@ -17,9 +17,15 @@ const Weather = () => {
         <div className="search_icon">
           <img src={search_icon} alt="" />
         </div>
-        <div className="current_weather_icon">
+        <div className="current_weather">
           <div className="img">
             <img src={clear_icon} alt="" />
+          </div>
+          <div className="degree">
+            <p>16°C</p>
+          </div>
+          <div className="city">
+            <p>London</p>
           </div>
         </div>
       </div>

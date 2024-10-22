@@ -20,7 +20,7 @@
   align-items: center;
   gap: 10px;
   width: 400px;
-  padding: 100px 20px;
+  padding: 50px 20px;
   background: rgb(2, 0, 36);
   border-radius: 20px;
   background-image: linear-gradient(150deg, hsl(240, 100%, 20%) 0%, hsl(281, 100%, 21%) 19%, hsl(304, 100%, 23%) 31%, hsl(319, 100%, 30%) 40%, hsl(329, 100%, 36%) 48%, hsl(336, 100%, 41%) 55%, hsl(346, 83%, 51%) 61%, hsl(3, 95%, 61%) 68%, hsl(17, 100%, 59%) 74%, hsl(30, 100%, 55%) 80%, hsl(40, 100%, 50%) 86%, hsl(48, 100%, 50%) 93%, hsl(55, 100%, 50%) 100%);
@@ -44,4 +44,20 @@
   background: #ebfffc;
   padding: 15px;
   cursor: pointer;
+}
+.weather .search_bar .current_weather {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 30 0;
+}
+.weather .search_bar .current_weather .degree p {
+  font-size: 80px;
+  color: #fff;
+  line-height: 1;
+}
+.weather .search_bar .current_weather .city p {
+  font-size: 40px;
+  color: #fff;
 }/*# sourceMappingURL=style.css.map */

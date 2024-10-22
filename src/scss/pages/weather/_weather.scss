@@ -14,7 +14,7 @@
     align-items: center;
     gap: 10px;
     width: 400px;
-    padding: 100px 20px;
+    padding: 50px 20px;
     background: rgb(2, 0, 36);
     border-radius: 20px;
     background-image: linear-gradient(
@@ -52,6 +52,26 @@
       background: #ebfffc;
       padding: 15px;
       cursor: pointer;
+    }
+    .current_weather {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 30 0;
+      .degree {
+        p {
+          font-size: 80px;
+          color: #fff;
+          line-height: 1;
+        }
+      }
+      .city {
+        p {
+          font-size: 40px;
+          color: #fff;
+        }
+      }
     }
   }
 }
