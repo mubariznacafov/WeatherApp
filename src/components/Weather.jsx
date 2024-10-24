@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import "../scss/pages/weather/_weather.scss";
-import clear_icon from "../assets/clear.png"; // İkonları kendi dosya yolunuza göre ayarlayın
+import clear_icon from "../assets/clear.png";
 
 const initialWeatherData = {
   forecast: {
@@ -56,7 +56,7 @@ const Weather = () => {
 
   useEffect(() => {
     const fetchData = async () => {
-      if (!location) return; // Eğer konum boşsa, veri çekme
+      if (!location) return; 
       try {
         const response = await axios.get(
           `http://api.weatherapi.com/v1/forecast.json?key=${
@@ -64,18 +64,18 @@ const Weather = () => {
           }&q=${location}&days=4&aqi=yes&alerts=yes`
         );
         setWeatherData(response.data);
-        console.log("API Response:", response.data); // Gelen veriyi konsola yazdır
+        console.log("API Response:", response.data); 
       } catch (error) {
         console.error("Error fetching weather data:", error);
       }
     };
 
-    fetchData(); // fetchData fonksiyonunu çağır
-  }, [location]); // location değiştiğinde çağrılır
+    fetchData(); 
+  }, [location]);
 
   const handleLocationChange = (event) => {
     setLocation(event.target.value);
-    console.log("Current Location:", event.target.value); // Mevcut konumu konsola yazdır
+    console.log("Current Location:", event.target.value); 
   };
 
   return (
@@ -93,15 +93,15 @@ const Weather = () => {
       <div className="cards">
         {weatherData.forecast.forecastday.map((day) => (
           <div className="card" key={day.date}>
-            <h1>{day.date}</h1>
+            <h2>{day.date}</h2>
             <div className="img">
               <img
                 src={`https:${day.day.condition.icon}`}
                 alt={day.day.condition.text}
               />
             </div>
-            <h2>{day.day.avgtemp_c} °C</h2>
-            <h2>{day.day.condition.text}</h2>
+            <h3>{day.day.avgtemp_c} °C</h3>
+            <h3>{day.day.condition.text}</h3>
           </div>
         ))}
       </div>
